@@ -6,12 +6,22 @@ $grid_breakpoints: (
 );
 
 :root {
-   --header_size: 80px;
-   --footer_size: 70px;
-   --menu_size: 300px;
    --minmax: minmax(min-content, max-content);
 
-   @include media(max, xxl) {
-      --menu_size: 260px;
-   }
+}
+
+.light_theme {
+   --color: rgb(255, 255, 255);
+   --color_secondary: rgb(255, 74, 74);
+   --background: rgb(000, 000, 000);
+   --background_secondary: rgb(255, 74, 74);
+   --background_wave: rgb(142, 93, 236);
+}
+
+.dark_theme {
+   --color: rgb(10, 17, 56);
+   --color_secondary: rgb(69, 154, 95);
+   --background: rgb(255, 255, 255);
+   --background_secondary: rgb(69, 154, 95);
+   --background_wave: rgb(180, 219, 255);
 }

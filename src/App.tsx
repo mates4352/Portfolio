@@ -8,7 +8,6 @@ type appType = {
 export const App:React.FC<appType> = () => {
   return (
     <div className={s.App}>
-
     </div>
   );
 }
