@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './About.module.scss';
 import {IconArrow} from "../../shared/icons/IconArrow";
+import {Button} from "../../shared/interactive/button/Button";
 
 type aboutType = {
 
@@ -25,12 +26,7 @@ export const About:React.FC<aboutType> = (props) => {
                   I acquired enough knowledge to perform complex project.
                </p>
 
-               <a className={s.button} href='/'>
-                  <span>More about me</span>
-                  <div className={s.button_icon}>
-                     <IconArrow/>
-                  </div>
-               </a>
+               <Button href={'/'}>More about me</Button>
             </div>
        </section>
    );
