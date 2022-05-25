@@ -1,17 +1,16 @@
 import React from 'react';
-import s from './About.module.scss';
-import {IconArrow} from "../../shared/icons/IconArrow";
+import s from './Home.module.scss';
 import {Button} from "../../shared/interactive/button/Button";
 
-type aboutType = {
+type homeType = {
 
 };
 
-export const About:React.FC<aboutType> = (props) => {
+export const Home:React.FC<homeType> = (props) => {
    const {} = props;
 
    return (
-       <section className={`${s.about} ${s.container}`}>
+       <section className={`${s.home} ${s.container}`}>
             <div className={s.image}></div>
 
             <div className={s.info}>
