@@ -25,7 +25,7 @@ export const Home:React.FC<homeType> = (props) => {
                   I acquired enough knowledge to perform complex project.
                </p>
 
-               <Button href={'/'}>More about me</Button>
+               <Button href={'/About'}>More about me</Button>
             </div>
        </section>
    );
