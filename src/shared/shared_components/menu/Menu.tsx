@@ -1,59 +1,31 @@
 import React from 'react';
 import s from './Menu.module.scss';
-import {NavLink} from "react-router-dom";
-import {IconHome} from "../../icons/IconHome";
-import {IconPerson} from "../../icons/IconPerson";
-import {IconMessage} from "../../icons/IconMessage";
+import {Link} from "./Link/Link";
 type menuType = {
 
 };
 
 export const Menu:React.FC<menuType> = (props) => {
    const {} = props;
-   const classLink = ({isActive}: any) => isActive ? `${s.link} ${s.active}` : s.link;
 
    return (
        <header className={s.header}>
           <nav className={s.menu}>
              <ul className={s.list}>
                 <li className={s.item}>
-                   <NavLink className={classLink} to={'/Home'}>
-                      <span className={s.text}>HOME</span>
-
-                      <div className={s.icon}>
-                         <IconHome/>
-                      </div>
-                   </NavLink>
+                   <Link href='/Home' icon={'HOME'}>HOME</Link>
                 </li>
 
                 <li className={s.item}>
-                   <NavLink className={classLink} to={'/About'}>
-                      <span className={s.text}>ABOUT</span>
-
-                      <div className={s.icon}>
-                         <IconPerson/>
-                      </div>
-                   </NavLink>
+                   <Link href='/About' icon={'PERSON'}>ABOUT</Link>
                 </li>
 
                 <li className={s.item}>
-                   <NavLink className={classLink} to={'/Portfolio'}>
-                      <span className={s.text}>PORTFOLIO</span>
-
-                      <div className={s.icon}>
-                         <IconMessage/>
-                      </div>
-                   </NavLink>
+                   <Link href='/Portfolio' icon={'LETTER'}>PORTFOLIO</Link>
                 </li>
 
                 <li className={s.item}>
-                   <NavLink className={classLink} to={'/Contact'}>
-                      <span className={s.text}>CONTACT</span>
-
-                      <div className={s.icon}>
-                         <IconMessage/>
-                      </div>
-                   </NavLink>
+                   <Link href='/Contact' icon={'MESSAGE'}>CONTACT</Link>
                 </li>
              </ul>
           </nav>

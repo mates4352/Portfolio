@@ -9,7 +9,7 @@ type appType = {
 }
 
 export const App:React.FC<appType> = () => {
-  const classTheme = true ? s.light_theme : s.dark_theme;
+  const classTheme = false ? s.light_theme : s.dark_theme;
   return (
       <div className={`${s.app} ${classTheme}`}>
          <BrowserRouter>
