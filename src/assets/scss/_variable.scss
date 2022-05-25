@@ -1,27 +1,8 @@
 $grid_breakpoints: (
-    xxl: 1639px,
-    xl: 1279px,
-    lg: 1023px,
-    md: 767px,
+    xl: 1023px,
+    lg: 767px,
 );
 
 :root {
    --minmax: minmax(min-content, max-content);
-
-}
-
-.light_theme {
-   --color: rgb(255, 255, 255);
-   --color_secondary: rgb(255, 74, 74);
-   --background: rgb(000, 000, 000);
-   --background_secondary: rgb(255, 74, 74);
-   --background_wave: rgb(142, 93, 236);
-}
-
-.dark_theme {
-   --color: rgb(10, 17, 56);
-   --color_secondary: rgb(69, 154, 95);
-   --background: rgb(255, 255, 255);
-   --background_secondary: rgb(69, 154, 95);
-   --background_wave: rgb(180, 219, 255);
 }

@@ -1,8 +1,15 @@
 .container {
    --container_padding: 64px;
-   width: calc(100% - var(--container_padding) * 2);
    max-width: 1440px;
    margin: 0 auto;
    padding: 0 var(--container_padding);
    box-sizing: content-box;
+
+   @include media(max, xl) {
+      --container_padding: 40px;
+   }
+
+   @include media(max, lg) {
+      --container_padding: 20px;
+   }
 }
