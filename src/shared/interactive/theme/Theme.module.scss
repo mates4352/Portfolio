@@ -1,0 +1,46 @@
+.theme {
+   position: fixed;
+   top: 0;
+   right: 0;
+   list-style: none;
+}
+
+.item {
+   position: absolute;
+   top: 0;
+   right: 0;
+   transition: transform 500ms ease-in-out, opacity 1000ms ease, visibility 1000ms ease;
+}
+
+.active {
+   transform: translateY(-100%);
+   visibility: hidden;
+   opacity: 0;
+}
+
+.button {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   padding: 25px;
+}
+
+.image {
+   width: 125px;
+   height: 125px;
+
+   transition: transform 500ms ease;
+
+   &:hover {
+      transform: rotate(360deg);
+   }
+}
+
+
+.sun {
+   background: radial-gradient(60px, #f2cd35, transparent);
+}
+
+.moon {
+   background: radial-gradient(60px, #fff, transparent);
+}

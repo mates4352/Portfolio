@@ -8,9 +8,9 @@ export const BgAnimation:React.FC<bgAnimationType> = (props) => {
    const {} = props;
 
    return (
-          <svg viewBox="0 0 618 2000" xmlns="http://www.w3.org/2000/svg"
+          <svg viewBox="0 0 718 2000" xmlns="http://www.w3.org/2000/svg"
                style={{
-                  width: 'var(--icon_width, 618px)',
+                  width: 'var(--icon_width, 718px)',
                   height: 'var(--icon_height, 100%)',
                   fill: 'var(--icon_fill, var(--background_secondary))',
                   display: 'flex'

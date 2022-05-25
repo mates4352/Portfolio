@@ -20,4 +20,5 @@
 .app {
    min-height: 100vh;
    background-color: var(--background);
+   transition: background-color 500ms ease;
 }

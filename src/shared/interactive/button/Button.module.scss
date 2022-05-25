@@ -20,6 +20,7 @@
   border-radius: var(--border_radius);
   border: 1px solid var(--background_secondary);
   overflow: hidden;
+  transition: background-color 500ms ease, color 500ms ease;
 
   span {
     z-index: 10;
