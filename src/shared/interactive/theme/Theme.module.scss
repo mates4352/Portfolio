@@ -1,3 +1,5 @@
+@import '../../../style';
+
 .block {
    position: fixed;
    top: 0;
@@ -19,6 +21,7 @@
    position: fixed;
    top: 0;
    right: 0;
+   z-index: 50;
    list-style: none;
 }
 
@@ -40,13 +43,24 @@
    border: none;
    cursor: pointer;
    padding: 25px;
+
+   @include media(max, xl) {
+      padding: 5px 20px;
+   }
 }
 
 .image {
-   width: 125px;
-   height: 125px;
+   --size_gradient: 60px;
+   --size: 125px;
+   width: var(--size);
+   height: var(--size);
 
    transition: transform 500ms ease;
+
+   @include media(max, lg) {
+      --size: 90px;
+      --size_gradient: 45px;
+   }
 
    &:hover {
       transform: rotate(360deg);
@@ -55,9 +69,9 @@
 
 
 .sun {
-   background: radial-gradient(60px, #f2cd35, transparent);
+   background: radial-gradient(var(--size_gradient), #f2cd35, transparent);
 }
 
 .moon {
-   background: radial-gradient(60px, #fff, transparent);
+   background: radial-gradient(var(--size_gradient), #fff, transparent);
 }

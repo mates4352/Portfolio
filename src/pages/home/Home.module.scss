@@ -21,6 +21,10 @@
       padding-top: var(--padding);
       padding-bottom: var(--padding);
    }
+
+   @include media(max, lg) {
+      padding-top: 90px;
+   }
 }
 
 .container {

@@ -9,25 +9,44 @@
 
   font: var(--link);
   color: var(--color);
+  text-decoration: none;
 
-  &:hover {
-    .text {
-      opacity: 1;
-      padding-right: 45px;
+  @include media(max, xl) {
+    flex-direction: row-reverse;
   }
-}
 
-  &:hover {
-    .icon {
-      background-color: var(--background_secondary);
+  @include media(min, min-xl) {
+    &:hover {
+      .text {
+        opacity: 1;
+        padding-right: 45px;
+      }
+
+      .icon {
+        background-color: var(--background_secondary);
+      }
+    }
   }
-}
+
+  @include media(max, xl) {
+    &:hover {
+      .text {
+        color: var(--color_secondary);
+      }
+
+      .icon {
+        --icon_fill: var(--color_secondary);
+      }
+    }
+  }
 }
 
 .active {
-  .icon {
-    background-color: var(--background_secondary);
-}
+  @include media(min, min-xl) {
+    .icon {
+      background-color: var(--background_secondary);
+    }
+  }
 }
 
 .text {
@@ -48,6 +67,18 @@
   border-radius: 30px;
   opacity: 0;
   transition: opacity 300ms ease, padding-right 300ms ease;
+
+  @include media(max, xl) {
+    position: unset;
+    transform: unset;
+
+    padding-right: unset;
+
+    color: var(--color);
+    font-size: 26px;
+    background-color: transparent;
+    opacity: 1;
+  }
 }
 
 .icon {
@@ -60,4 +91,9 @@
   background-color: var(--color);
   border-radius: 50%;
   transition: background-color 500ms ease;
+
+  @include media(max, xl) {
+    background-color: transparent;
+    transition: unset;
+  }
 }
