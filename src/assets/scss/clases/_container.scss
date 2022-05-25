@@ -3,7 +3,10 @@
    max-width: 1440px;
    margin: 0 auto;
    padding: 0 var(--container_padding);
+   transform: translateY(-100%);
+
    box-sizing: content-box;
+   animation: transformY 1s 500ms ease forwards;
 
    @include media(max, xl) {
       --container_padding: 40px;
@@ -11,5 +14,18 @@
 
    @include media(max, lg) {
       --container_padding: 20px;
+   }
+}
+
+
+@keyframes transformY {
+   0% {
+      transform: translateY(-100%);
+      opacity: 0;
+   }
+
+   100% {
+      transform: translateY(0);
+      opacity: 1;
    }
 }
