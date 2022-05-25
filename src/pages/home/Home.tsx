@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Home.module.scss';
 import {Button} from "../../shared/interactive/button/Button";
+import {BlockAnimation} from "../../shared/interactive/blockAnimation/BlockAnimation";
 
 type homeType = {
 
@@ -11,6 +12,7 @@ export const Home:React.FC<homeType> = (props) => {
 
    return (
        <section className={`${s.home} ${s.container}`}>
+            <BlockAnimation/>
             <div className={s.image}></div>
 
             <div className={s.info}>
