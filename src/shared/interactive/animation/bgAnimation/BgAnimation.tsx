@@ -13,7 +13,8 @@ export const BgAnimation:React.FC<bgAnimationType> = (props) => {
                   width: 'var(--icon_width, 718px)',
                   height: 'var(--icon_height, 100%)',
                   fill: 'var(--icon_fill, var(--background_secondary))',
-                  display: 'flex'
+                  display: 'flex',
+                  transition: 'fill 500ms ease',
                }}
           >
              <path id="bg"

@@ -75,13 +75,34 @@
 }
 
 .title {
+   position: relative;
    max-width: 600px;
+   padding-left: 50px;
+
    font: var(--h2);
    color: var(--color_secondary);
    transition: color 500ms ease;
 
    @include media(max, xl) {
       max-width: unset;
+      padding-left: unset;
+   }
+
+   &::before {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 0;
+
+      width: 40px;
+      height: 3px;
+
+      background-color: var(--background_secondary);
+      border-radius: 12px;
+
+      @include media(max, xl) {
+         display: none;
+      }
    }
 
    b {

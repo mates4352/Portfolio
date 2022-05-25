@@ -15,6 +15,7 @@ export const App:React.FC<appType> = () => {
   return (
       <div className={`${s.app} ${classTheme}`}>
          <Theme isTheme={isTheme} setIsTheme={setIsTheme}/>
+
          <BrowserRouter>
             <Routes>
                <Route path={"/"} element={<Navigate replace to="/Home"/>}/>
