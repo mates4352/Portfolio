@@ -3,9 +3,11 @@
 .dark_theme {
    --color: rgb(255, 255, 255);
    --color_secondary: rgb(255, 74, 74);
+   --color_secondary_one: rgb(37, 37, 37);
+
    --background: rgb(8, 13, 44);
    --background_secondary: var(--color_secondary);
-   --background_secondary_2: rgb(255, 255, 255);
+   --background_secondary_one: var(--color_secondary_one);
    --background_wave: rgb(142, 93, 236);
    display: block;
 }
@@ -13,9 +15,11 @@
 .light_theme {
    --color: rgb(0, 0, 0);
    --color_secondary: rgb(78, 192, 147);
+   --color_secondary_one: rgb(155, 160, 187);
+
    --background: rgb(255, 255, 255);
    --background_secondary: var(--color_secondary);
-   --background_secondary_2:  rgb(8, 13, 44);
+   --background_secondary_one: var(--color_secondary_one);
    --background_wave: rgb(180, 219, 255);
 }
 

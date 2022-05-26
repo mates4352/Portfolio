@@ -1,12 +1,13 @@
 @import './../../style';
 
 body {
-   overflow: visible;
 }
 
 .about {
+   height: 100vh;
    padding-top: 80px;
    padding-bottom: 50px;
+   overflow-y: scroll;
 
    @include media(max, lg) {
       padding-top: 100px;
@@ -15,6 +16,7 @@ body {
 
 .container {
    @extend .container;
+
    --container_padding: 100px;
 
    @include media(max, xl) {
@@ -42,7 +44,8 @@ body {
 
 .title {
    font: var(--h1);
-   color: #252525;
+   color: var(--color_secondary_one);
+   transition: color 500ms ease;
 
    @include media(max, xl) {
       display: none;

@@ -15,8 +15,9 @@
 
       border-radius: 8px;
       border: none;
-      box-shadow: 0 2px 8px #504e4e;
-      background-color: var(--background_secondary);
+      box-shadow: 0 0 15px var(--background_secondary_one);
+      background-color: var(--background);
+      transition: box-shadow 500ms ease, background-color 500ms ease;
       cursor: pointer;
 
       span {
@@ -27,8 +28,8 @@
 
          width: 65%;
          height: 2px;
-         background-color: var(--color);
-         transition: transform 300ms ease;
+         background-color: var(--background_secondary);
+         transition: background-color 500ms ease, transform 300ms ease;
       }
 
       &::after,
@@ -41,8 +42,8 @@
 
          width: 65%;
          height: 2px;
-         background-color: var(--color);
-         transition: transform 300ms ease;
+         background-color: var(--background_secondary);
+         transition: background-color 500ms ease, transform 300ms ease;
       }
 
       &::after {

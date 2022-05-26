@@ -1,0 +1,87 @@
+@import "../../../../style";
+
+.experience {
+
+}
+
+.title {
+   margin-bottom: 25px;
+
+   font: var(--h3);
+   color: var(--color);
+   text-align: center;
+   transition: color 500ms ease;
+
+   @include media(max, lg) {
+      margin-bottom: 20px;
+   }
+}
+
+.list {
+   display: grid;
+   grid-template-columns: repeat(2, var(--minmax));
+   justify-content: center;
+   gap: 20px;
+   list-style: none;
+
+   @include media(max, xl) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+   }
+}
+
+.item {
+   display: grid;
+   grid-template-columns: repeat(2, var(--minmax));
+   column-gap: 10px;
+}
+
+.icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   margin-top: 8px;
+
+   border-radius: 50%;
+   background-color: var(--background_secondary);
+   transition: background-color 500ms ease;
+}
+
+.card {
+
+}
+
+.date {
+   font: var(--caption);
+   color: var(--color_secondary);
+   transition: color 500ms ease;
+}
+
+.card_title {
+   margin-bottom: 15px;
+   font: var(--h4);
+   color: var(--color);
+   transition: color 500ms ease;
+}
+
+.work {
+   margin-top: -15px;
+   margin-bottom: 10px;
+   font: var(--p2);
+   color: var(--color_secondary);
+   transition: color 500ms ease;
+
+   span {
+      font: var(--p1);
+   }
+}
+
+.text {
+   max-width: 565px;
+
+   font: var(--p3);
+   color: var(--color);
+   transition: color 500ms ease;
+}
