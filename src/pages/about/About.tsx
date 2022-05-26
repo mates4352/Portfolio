@@ -2,7 +2,7 @@ import React from 'react';
 import s from './About.module.scss';
 import {BlockAnimation} from "../../shared/interactive/blockAnimation/BlockAnimation";
 import {Info} from "./components/info/Info";
-import {CircleBar} from "../../shared/shared_components/ circleBar/CircleBar";
+import {Skills} from "./components/skills/Skills";
 
 type aboutType = {
 
@@ -22,46 +22,7 @@ export const About:React.FC<aboutType> = (props) => {
              </hgroup>
 
              <Info/>
-
-             <section className={s.skills}>
-                <h2 className={s.skills_title}>MY SKILLS</h2>
-
-                <ul className={s.skills_list}>
-                   <li className={s.skills_item}>
-                      <article className={s.skills_skill}>
-                         <h2 className={s.skills_title}>Html5</h2>
-                      </article>
-
-                      <article className={s.skills_skill}>
-                         <h2 className={s.skills_title}>Css3</h2>
-                      </article>
-
-                      <article className={s.skills_skill}>
-                         <h2 className={s.skills_title}>Sass</h2>
-                      </article>
-
-                      <article className={s.skills_skill}>
-                         <h2 className={s.skills_title}>PostCss</h2>
-                      </article>
-
-                      <article className={s.skills_skill}>
-                         <h2 className={s.skills_title}>Js</h2>
-                      </article>
-
-                      <article className={s.skills_skill}>
-                         <h2 className={s.skills_title}>React</h2>
-                      </article>
-
-                      <article className={s.skills_skill}>
-                         <h2 className={s.skills_title}>Angular</h2>
-                      </article>
-
-                      <article className={s.skills_skill}>
-                         <h2 className={s.skills_title}>Gulp</h2>
-                      </article>
-                   </li>
-                </ul>
-             </section>
+             <Skills/>
 
              <section className={s.experience}>
                 <h2 className={s.experience_title}>

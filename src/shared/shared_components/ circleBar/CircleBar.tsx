@@ -1,9 +1,12 @@
 import React from 'react';
 import s from './CircleBar.module.scss';
 
-type circleBarType = {};
+type circleBarType = {
+   children: string
+};
+
 export const CircleBar: React.FC<circleBarType> = (props) => {
-   const {} = props;
+   const {children} = props;
 
    return (
        <div className={s.CircleBar}>
@@ -20,7 +23,7 @@ export const CircleBar: React.FC<circleBarType> = (props) => {
              </g>
           </svg>
 
-          <span className={s.title}>90%</span>
+          <span className={s.title}>{children}</span>
        </div>
    );
 };
