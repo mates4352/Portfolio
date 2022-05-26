@@ -4,6 +4,7 @@ import {Home} from "./pages/home/Home";
 import {Menu} from "./shared/shared_components/menu/Menu";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import {Theme} from "./shared/interactive/theme/Theme";
+import {About} from "./pages/about/About";
 
 type appType = {}
 
@@ -19,6 +20,7 @@ export const App: React.FC<appType> = () => {
              <Routes>
                 <Route path={"/"} element={<Navigate replace to="/Home"/>}/>
                 <Route path="Home" element={<Home/>}/>
+                <Route path="About" element={<About/>}/>
              </Routes>
              <Menu/>
           </BrowserRouter>
