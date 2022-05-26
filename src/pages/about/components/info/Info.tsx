@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Info.module.scss';
 import {Button} from "../../../../shared/interactive/button/Button";
+import person from './../../../../assets/images/person.jpeg';
 
 type infoType = {
    
@@ -13,6 +14,8 @@ export const Info:React.FC<infoType> = (props) => {
        <section className={s.info}>
           <div className={s.wrap}>
              <h2 className={s.title}>PERSONAL INFORMATION</h2>
+
+             <img className={s.person} src={person} alt=""/>
 
              <dl className={s.list}>
                 <div className={s.list_item}>

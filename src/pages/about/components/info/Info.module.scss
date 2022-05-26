@@ -23,11 +23,39 @@
    transition: color 500ms ease;
 }
 
+.person {
+   display: none;
+   visibility: hidden;
+   opacity: 0;
+
+   @include media(max, xl) {
+      display: block;
+      width: 260px;
+      height: 260px;
+      margin: 0 auto;
+
+      border-radius: 50%;
+      border: 5px solid var(--background_secondary);
+      visibility: visible;
+      opacity: 1;
+      transition: border 500ms ease;
+   }
+}
+
 .list {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    column-gap: 10px;
    row-gap: 15px;
+
+   @include media(max, xl) {
+      column-gap: 30px;
+      grid-template-columns: repeat(2, var(--minmax));
+   }
+
+   @include media(max, lg) {
+      column-gap: 10px;
+   }
 }
 
 .list_item {
@@ -60,9 +88,14 @@
 
 .sublist {
    display: grid;
-   grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(2, minmax(200px, 280px));
    gap: 20px;
    list-style: none;
+
+   @include media(max, xl) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 25px;
+   }
 
    @include media(max, lg) {
       grid-template-columns: 1fr;
@@ -103,7 +136,7 @@
 .card_text {
    position: relative;
 
-   padding-left: 50px;
+   padding-left: 40px;
 
    font: var(--p2);
    color: var(--color);
@@ -116,7 +149,7 @@
       left: 0;
       transform: translateY(-50%);
 
-      width: 40px;
+      width: 30px;
       height: 2px;
 
       background-color: var(--background_secondary);
