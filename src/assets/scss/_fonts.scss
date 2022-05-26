@@ -31,14 +31,18 @@
 }
 
 :root {
+   --h1: 120px/0.75 Poppins_Black;
    --h2: 55px/1.1 Poppins_Bold;
+   --h3: 26px/1.2 Poppins_Bold;
    --p1: 16px/1.3 Poppins_Regular;
+   --p2: 18px/1.3 Poppins_Medium;
    --link: 16px/1.1 Poppins_Medium;
    --button: 18px/1.1 Poppins_Bold;
 }
 
 @include media(max, xl) {
    :root {
+      --h1: 110px/0.75 Poppins_Black;
       --h2: 51px/1.1 Poppins_Bold;
    }
 }
@@ -46,5 +50,6 @@
 @include media(max, lg) {
    :root {
       --h2: 45px/1.1 Poppins_Bold;
+      --h3: 20px/1.1 Poppins_Bold;
    }
 }
