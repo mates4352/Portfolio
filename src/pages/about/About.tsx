@@ -2,6 +2,7 @@ import React from 'react';
 import s from './About.module.scss';
 import {BlockAnimation} from "../../shared/interactive/blockAnimation/BlockAnimation";
 import {Info} from "./components/info/Info";
+import {CircleBar} from "../../shared/shared_components/ circleBar/CircleBar";
 
 type aboutType = {
 
