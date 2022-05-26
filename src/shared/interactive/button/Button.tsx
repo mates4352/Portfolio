@@ -5,19 +5,38 @@ import {NavLink} from "react-router-dom";
 
 type buttonProps = {
    children: string
-   href: string,
+   href?: string,
+   to?: string,
 };
 
 export const Button:React.FC<buttonProps> = (props) => {
-   const {children, href} = props;
+   const {children, href, to} = props;
 
    return (
-       <NavLink className={s.button} to={href}>
-          <span>{children}</span>
+       <>
+          {
+             to &&
+             <NavLink className={s.button} to={to}>
+               <span>{children}</span>
 
-          <div className={s.button_icon}>
-             <IconArrow/>
-          </div>
-       </NavLink>
+               <div className={s.button_icon}>
+                 <IconArrow/>
+               </div>
+             </NavLink>
+          }
+
+
+          {
+             href &&
+             <a className={s.button} href={href} target='_blank' rel='noopener'>
+               <span>{children}</span>
+
+               <div className={s.button_icon}>
+                 <IconArrow/>
+               </div>
+             </a>
+          }
+       </>
+
    );
 };

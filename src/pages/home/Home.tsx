@@ -31,7 +31,7 @@ export const Home:React.FC<homeType> = (props) => {
                    I acquired enough knowledge to perform complex project.
                 </p>
 
-                <Button href={'/About'}>More about me</Button>
+                <Button to={'/About'}>More about me</Button>
              </div>
           </div>
        </section>

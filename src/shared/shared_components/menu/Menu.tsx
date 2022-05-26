@@ -10,6 +10,9 @@ export const Menu:React.FC<menuType> = (props) => {
    const {} = props;
    const [isBurger, setIsBurger] = useState<boolean>(false)
    const isActive = isBurger ? s.header_active : '';
+   const closeMenu = () => {
+      setIsBurger(!isBurger)
+   }
 
    return (
        <>
@@ -17,19 +20,19 @@ export const Menu:React.FC<menuType> = (props) => {
           <header className={`${s.header} ${isActive}`}>
              <nav className={s.menu}>
                 <ul className={s.list}>
-                   <li className={s.item}>
+                   <li onClick={closeMenu} className={s.item}>
                       <Link href='/Home' icon={'HOME'}>HOME</Link>
                    </li>
 
-                   <li className={s.item}>
+                   <li onClick={closeMenu} className={s.item}>
                       <Link href='/About' icon={'PERSON'}>ABOUT</Link>
                    </li>
 
-                   <li className={s.item}>
+                   <li onClick={closeMenu} className={s.item}>
                       <Link href='/Portfolio' icon={'LETTER'}>PORTFOLIO</Link>
                    </li>
 
-                   <li className={s.item}>
+                   <li onClick={closeMenu} className={s.item}>
                       <Link href='/Contact' icon={'MESSAGE'}>CONTACT</Link>
                    </li>
                 </ul>

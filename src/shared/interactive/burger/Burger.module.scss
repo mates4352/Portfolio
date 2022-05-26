@@ -15,8 +15,8 @@
 
       border-radius: 8px;
       border: none;
-      box-shadow: 0 0 15px var(--background_secondary_one);
-      background-color: var(--background);
+      box-shadow: 0 2px 10px var(--color);
+      background-color: var(--color);
       transition: box-shadow 500ms ease, background-color 500ms ease;
       cursor: pointer;
 
