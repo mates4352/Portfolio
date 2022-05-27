@@ -4,7 +4,7 @@
    position: absolute;
    top: 50%;
    right: 20px;
-   z-index: 100;
+   z-index: 9999;
    transform: translateY(-50%);
 
    @include media(max, xl) {
@@ -22,7 +22,9 @@
 }
 
 .header_active {
-   transform: translateX(0);
+   @include media(max, xl) {
+      transform: translateX(0);
+   }
 }
 
 .menu {

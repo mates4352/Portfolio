@@ -14,8 +14,42 @@ body {
    }
 }
 
+.about::-webkit-scrollbar {
+   width: 0;
+}
+
+.about::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+.about::-webkit-scrollbar-thumb {
+   background-color: transparent;
+}
+
+.wave {
+   position: absolute;
+   left: 0;
+   width: 100%;
+   fill: #8e5dec;
+
+   @include media(max, xl) {
+      display: none;
+   }
+}
+
+.wave_header {
+   top: -5px;
+   transform: rotate(180deg);
+}
+
+.wave_footer {
+   bottom: -5px;
+}
+
 .container {
    @extend .container;
+   position: relative;
+   z-index: 999;
 
    --container_padding: 100px;
 

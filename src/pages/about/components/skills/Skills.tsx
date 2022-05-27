@@ -16,56 +16,56 @@ export const Skills:React.FC<skillsType> = (props) => {
           <ul className={s.list}>
              <li className={s.item}>
                 <article className={s.skill}>
-                   <CircleBar>80%</CircleBar>
+                   <CircleBar>90</CircleBar>
                    <h2 className={s.subTitle}>Html5</h2>
                 </article>
              </li>
 
              <li className={s.item}>
                 <article className={s.skill}>
-                   <CircleBar>80%</CircleBar>
+                   <CircleBar>80</CircleBar>
                    <h2 className={s.subTitle}>Css3</h2>
                 </article>
              </li>
 
              <li className={s.item}>
                 <article className={s.skill}>
-                   <CircleBar>70%</CircleBar>
+                   <CircleBar>70</CircleBar>
                    <h2 className={s.subTitle}>Sass</h2>
                 </article>
              </li>
 
              <li className={s.item}>
                 <article className={s.skill}>
-                   <CircleBar>40%</CircleBar>
-                   <h2 className={s.subTitle}>PostCss</h2>
-                </article>
-             </li>
-
-             <li className={s.item}>
-                <article className={s.skill}>
-                   <CircleBar>30%</CircleBar>
+                   <CircleBar>30</CircleBar>
                    <h2 className={s.subTitle}>Js</h2>
                 </article>
              </li>
 
              <li className={s.item}>
                 <article className={s.skill}>
-                   <CircleBar>40%</CircleBar>
+                   <CircleBar>25</CircleBar>
+                   <h2 className={s.subTitle}>TypeScript</h2>
+                </article>
+             </li>
+
+             <li className={s.item}>
+                <article className={s.skill}>
+                   <CircleBar>40</CircleBar>
                    <h2 className={s.subTitle}>React</h2>
                 </article>
              </li>
 
              <li className={s.item}>
                 <article className={s.skill}>
-                   <CircleBar>20%</CircleBar>
+                   <CircleBar>20</CircleBar>
                    <h2 className={s.subTitle}>Angular</h2>
                 </article>
              </li>
 
              <li className={s.item}>
                 <article className={s.skill}>
-                   <CircleBar>50%</CircleBar>
+                   <CircleBar>50</CircleBar>
                    <h2 className={s.subTitle}>Gulp</h2>
                 </article>
              </li>

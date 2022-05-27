@@ -19,11 +19,11 @@ export const CircleBar: React.FC<circleBarType> = (props) => {
           >
              <g>
                 <circle r="80" cx="100" cy="100" fill="none" stroke-width="12" stroke="var(--background_secondary_one)" style={{transition: 'stroke 500ms ease'}}></circle>
-                <circle r="80" cx="100" cy="100" fill="none" stroke-width="12" stroke="var(--background_secondary)" style={{transition: 'stroke 500ms ease'}} stroke-dasharray="452.16 50.24" stroke-dashoffset="125"></circle>
+                <circle r="80" cx="100" cy="100" fill="none" stroke-width="12" stroke="var(--background_secondary)" style={{transition: 'stroke 500ms ease', transform: 'rotate(270deg)', transformOrigin: 'center center'}} stroke-dasharray="505" strokeDashoffset={`calc(505 - (505 * ${children}) / 100)`}></circle>
              </g>
           </svg>
 
-          <span className={s.title}>{children}</span>
+          <span className={s.title}>{children}%</span>
        </div>
    );
 };
