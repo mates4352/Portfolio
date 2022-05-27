@@ -6,6 +6,7 @@ import {Skills} from "./components/skills/Skills";
 import {Experience} from "./components/experience/Experience";
 import {WeveHeader} from "../../shared/interactive/animation/weveAnimation/WeveHeader";
 import {WeveFooter} from "../../shared/interactive/animation/weveAnimation/WeveFooter";
+import {MainTitle} from "../../shared/shared_components/mainTitle/MainTitle";
 
 type aboutType = {
 
@@ -17,24 +18,17 @@ export const About:React.FC<aboutType> = (props) => {
    return (
        <section className={s.about}>
           <BlockAnimation/>
-          <div className={`${s.wave} ${s.wave_header}`}>
-             <WeveHeader id={'header'}/>
-          </div>
+          <WeveHeader id={'header'}/>
 
           <div className={s.container}>
-             <hgroup className={s.title_wrap}>
-                <h1 className={s.title}>SUMMARY</h1>
-                <h2 className={s.subTitle}>ABOUT <span>ME</span></h2>
-             </hgroup>
+             <MainTitle mainTitle={'SUMMARY'} title={'ABOUT'} subTitle={'ME'}/>
 
              <Info/>
              <Skills/>
              <Experience/>
           </div>
 
-          <div className={`${s.wave} ${s.wave_footer}`}>
-             <WeveFooter id={'footer'}/>
-          </div>
+          <WeveFooter id={'footer'}/>
        </section>
    );
 };

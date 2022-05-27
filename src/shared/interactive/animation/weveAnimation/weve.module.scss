@@ -1,0 +1,28 @@
+@import './../../../../style';
+
+.weveHeader {
+   position: absolute;
+   left: 0;
+   top: -5px;
+   transform: rotate(180deg);
+
+   width: 100%;
+   fill: #8e5dec;
+
+   @include media(max, xl) {
+      display: none;
+   }
+}
+
+.WeveFooter {
+   position: absolute;
+   left: 0;
+   bottom: -5px;
+
+   width: 100%;
+   fill: #8e5dec;
+
+   @include media(max, xl) {
+      display: none;
+   }
+}

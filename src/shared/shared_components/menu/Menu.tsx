@@ -21,19 +21,19 @@ export const Menu:React.FC<menuType> = (props) => {
              <nav className={s.menu}>
                 <ul className={s.list}>
                    <li onClick={closeMenu} className={s.item}>
-                      <Link href='/Home' icon={'HOME'}>HOME</Link>
+                      <Link href='Home' icon={'HOME'}>HOME</Link>
                    </li>
 
                    <li onClick={closeMenu} className={s.item}>
-                      <Link href='/About' icon={'PERSON'}>ABOUT</Link>
+                      <Link href='About' icon={'PERSON'}>ABOUT</Link>
                    </li>
 
                    <li onClick={closeMenu} className={s.item}>
-                      <Link href='/Portfolio' icon={'LETTER'}>PORTFOLIO</Link>
+                      <Link href='Portfolio' icon={'LETTER'}>PORTFOLIO</Link>
                    </li>
 
                    <li onClick={closeMenu} className={s.item}>
-                      <Link href='/Contact' icon={'MESSAGE'}>CONTACT</Link>
+                      <Link href='Contact' icon={'MESSAGE'}>CONTACT</Link>
                    </li>
                 </ul>
              </nav>

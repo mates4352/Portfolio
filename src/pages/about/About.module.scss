@@ -26,26 +26,6 @@ body {
    background-color: transparent;
 }
 
-.wave {
-   position: absolute;
-   left: 0;
-   width: 100%;
-   fill: #8e5dec;
-
-   @include media(max, xl) {
-      display: none;
-   }
-}
-
-.wave_header {
-   top: -5px;
-   transform: rotate(180deg);
-}
-
-.wave_footer {
-   bottom: -5px;
-}
-
 .container {
    @extend .container;
    position: relative;
@@ -59,51 +39,5 @@ body {
 
    @include media(max, lg) {
       --container_padding: 20px;
-   }
-}
-
-.title_wrap {
-   position: relative;
-   margin-bottom: 80px;
-   text-align: center;
-
-   @include media(max, xl) {
-      margin-bottom: 50px;
-   }
-
-   @include media(max, lg) {
-      margin-bottom: 40px;
-   }
-}
-
-.title {
-   font: var(--h1);
-   color: var(--color_secondary_one);
-   transition: color 500ms ease;
-
-   @include media(max, xl) {
-      display: none;
-   }
-}
-
-.subTitle {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-
-   font: var(--h2);
-   color: var(--color);
-   text-align: center;
-   transition: color 500ms ease;
-
-   @include media(max, xl) {
-      position: unset;
-      transform: unset;
-   }
-
-   span {
-      color: var(--color_secondary);
-      transition: color 500ms ease;
    }
 }

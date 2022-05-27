@@ -1,0 +1,11 @@
+@import "./../../style";
+
+.portfolio {
+   padding-top: 80px;
+   padding-bottom: 50px;
+   overflow-y: scroll;
+
+   @include media(max, lg) {
+      padding-top: 100px;
+   }
+}
