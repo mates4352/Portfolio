@@ -86,9 +86,15 @@
    color: var(--color_secondary);
    transition: color 500ms ease;
 
+   @include media(max, xxl) {
+      padding-right: 30px;
+      padding-left: unset;
+   }
+
    @include media(max, xl) {
       max-width: unset;
       padding-left: unset;
+      padding-right: unset;
    }
 
    &::before {
@@ -103,7 +109,7 @@
       background-color: var(--background_secondary);
       border-radius: 12px;
 
-      @include media(max, xl) {
+      @include media(max, xxl) {
          display: none;
       }
    }
@@ -121,7 +127,12 @@
    color: var(--color);
    transition: color 500ms ease;
 
+   @include media(max, xxl) {
+      padding-right: 30px;
+   }
+
    @include media(max, xl) {
       max-width: unset;
+      padding-right: unset;
    }
 }
