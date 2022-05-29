@@ -1,11 +1,40 @@
 @import "./../../style";
 
 .portfolio {
+   position: relative;
+
+   height: 100vh;
    padding-top: 80px;
    padding-bottom: 50px;
+
    overflow-y: scroll;
+   @extend .scrollbar;
 
    @include media(max, lg) {
       padding-top: 100px;
    }
+}
+
+.container {
+   @extend .container;
+   animation: unset;
+}
+
+.list {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-auto-rows: 250px;
+   gap: 30px;
+   list-style: none;
+
+   @include media(max, xl) {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   @include media(max, lg) {
+      grid-template-columns: 1fr;
+   }
+}
+
+.item {
 }

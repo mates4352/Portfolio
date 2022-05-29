@@ -8,22 +8,11 @@ body {
    padding-top: 80px;
    padding-bottom: 50px;
    overflow-y: scroll;
+   @extend .scrollbar;
 
    @include media(max, lg) {
       padding-top: 100px;
    }
-}
-
-.about::-webkit-scrollbar {
-   width: 0;
-}
-
-.about::-webkit-scrollbar-track {
-   background: transparent;
-}
-
-.about::-webkit-scrollbar-thumb {
-   background-color: transparent;
 }
 
 .container {

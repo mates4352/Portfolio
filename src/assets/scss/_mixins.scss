@@ -41,3 +41,18 @@
    }
 
 }
+
+.scrollbar {
+   &::-webkit-scrollbar {
+      width: 0;
+   }
+
+   &::-webkit-scrollbar-track {
+      background: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+   }
+
+}

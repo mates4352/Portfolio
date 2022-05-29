@@ -65,8 +65,8 @@ export const Skills:React.FC<skillsType> = (props) => {
 
              <li className={s.item}>
                 <article className={s.skill}>
-                   <CircleBar>50</CircleBar>
-                   <h2 className={s.subTitle}>Gulp</h2>
+                   <CircleBar>45</CircleBar>
+                   <h2 className={s.subTitle}>Redux</h2>
                 </article>
              </li>
           </ul>

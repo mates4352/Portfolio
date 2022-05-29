@@ -3,7 +3,7 @@
    max-width: 1440px;
    margin: 0 auto;
    padding: 0 var(--container_padding);
-   transform: translateY(-100%);
+   transform: unset;
 
    box-sizing: content-box;
    animation: transformY 1s 500ms ease forwards;
@@ -24,8 +24,11 @@
       opacity: 0;
    }
 
-   100% {
-      transform: translateY(0);
+   90% {
+
       opacity: 1;
+   }
+   100% {
+      transform: unset;
    }
 }

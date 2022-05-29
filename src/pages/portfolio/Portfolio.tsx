@@ -21,9 +21,41 @@ export const Portfolio:React.FC<portfolioType> = (props) => {
              <MainTitle mainTitle={'WORK'} title={'MY'} subTitle={'PORTFOLIO'}/>
 
              <ul className={s.list}>
-               <li className={s.li}>
-                  <Card/>
+               <li className={s.item}>
+                  <Card nameProject={'card'}/>
                </li>
+
+                <li className={s.item}>
+                   <Card nameProject={'card'}/>
+                </li>
+
+                <li className={s.item}>
+                   <Card nameProject={'card'}/>
+                </li>
+
+                <li className={s.item}>
+                   <Card nameProject={'card'}/>
+                </li>
+
+                <li className={s.item}>
+                   <Card nameProject={'card'}/>
+                </li>
+
+                <li className={s.item}>
+                   <Card nameProject={'card'}/>
+                </li>
+
+                <li className={s.item}>
+                   <Card nameProject={'card'}/>
+                </li>
+
+                <li className={s.item}>
+                   <Card nameProject={'card'}/>
+                </li>
+
+                <li className={s.item}>
+                   <Card nameProject={'card'}/>
+                </li>
              </ul>
           </div>
        </section>
