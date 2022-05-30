@@ -44,13 +44,6 @@ export const Skills:React.FC<skillsType> = (props) => {
 
              <li className={s.item}>
                 <article className={s.skill}>
-                   <CircleBar>25</CircleBar>
-                   <h2 className={s.subTitle}>TypeScript</h2>
-                </article>
-             </li>
-
-             <li className={s.item}>
-                <article className={s.skill}>
                    <CircleBar>40</CircleBar>
                    <h2 className={s.subTitle}>React</h2>
                 </article>
@@ -58,15 +51,22 @@ export const Skills:React.FC<skillsType> = (props) => {
 
              <li className={s.item}>
                 <article className={s.skill}>
-                   <CircleBar>20</CircleBar>
-                   <h2 className={s.subTitle}>Angular</h2>
+                   <CircleBar>60</CircleBar>
+                   <h2 className={s.subTitle}>Redux</h2>
                 </article>
              </li>
 
              <li className={s.item}>
                 <article className={s.skill}>
-                   <CircleBar>45</CircleBar>
-                   <h2 className={s.subTitle}>Redux</h2>
+                   <CircleBar>30</CircleBar>
+                   <h2 className={s.subTitle}>TypeScript</h2>
+                </article>
+             </li>
+
+             <li className={s.item}>
+                <article className={s.skill}>
+                   <CircleBar>20</CircleBar>
+                   <h2 className={s.subTitle}>Angular</h2>
                 </article>
              </li>
           </ul>

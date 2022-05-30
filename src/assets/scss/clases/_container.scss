@@ -3,7 +3,7 @@
    max-width: 1440px;
    margin: 0 auto;
    padding: 0 var(--container_padding);
-   transform: unset;
+   transform: translateY(-100%);
 
    box-sizing: content-box;
    animation: transformY 1s 500ms ease forwards;

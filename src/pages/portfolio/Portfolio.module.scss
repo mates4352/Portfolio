@@ -17,6 +17,7 @@
 
 .container {
    @extend .container;
+   transform: unset;
    animation: unset;
 }
 

@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
 import s from './Card.module.scss';
 import {Popup} from "../popup/Popup";
+import {projectType} from "../../../bll/redux/reducers/portfolio-reducer";
 
 type cardType = {
-   nameProject: string
+   project: projectType,
 };
 
 export const Card:React.FC<cardType> = (props) => {
-   const {nameProject} = props;
+   const {title, image, alt} = props.project;
    const [isShowPopup, setIsShowPopup] = useState<boolean>(false);
    const closePopup = () => {
       setIsShowPopup(!isShowPopup)
@@ -16,10 +17,11 @@ export const Card:React.FC<cardType> = (props) => {
    return (
        <>
           <article className={s.card} onClick={closePopup} >
-             <h2 className={s.title}>{nameProject}</h2>
+             <h2 className={s.title}>{title}</h2>
+             <img className={s.image} src={image} alt={alt}/>
           </article>
 
-          {isShowPopup && <Popup nameProject={nameProject} closePopup={closePopup}/>}
+          {isShowPopup && <Popup project={props.project} closePopup={closePopup}/>}
        </>
    );
 };
