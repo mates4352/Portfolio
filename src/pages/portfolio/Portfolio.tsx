@@ -4,7 +4,6 @@ import {BlockAnimation} from "../../shared/interactive/blockAnimation/BlockAnima
 import {WeveHeader} from "../../shared/interactive/animation/weveAnimation/WeveHeader";
 import {MainTitle} from "../../shared/shared_components/mainTitle/MainTitle";
 import {Card} from "../../shared/shared_components/card/Card";
-import {projectType} from "../../bll/redux/reducers/portfolio-reducer";
 import sait_1 from './../../assets/images/sait1.jpg';
 import sait_2 from './../../assets/images/sait2.jpg';
 import sait_3 from './../../assets/images/sait3.jpg';
@@ -19,7 +18,20 @@ import sait_11 from './../../assets/images/sait11.jpg';
 import sait_12 from './../../assets/images/sait12.jpg';
 import {WeveFooter} from "../../shared/interactive/animation/weveAnimation/WeveFooter";
 
-type portfolioType = {};
+type portfolioType = {
+   projects: Array<projectType>,
+}
+
+export type projectType = {
+   title: string,
+   type: string
+   image: string
+   alt: string
+   pageLink: string
+   gitHubLink: string
+   technologies: Array<string>,
+}
+
 const projects:Array<projectType> = [
    {
       title: 'Biobank',
@@ -131,7 +143,9 @@ const projects:Array<projectType> = [
    },
 ]
 
-export const Portfolio: React.FC<portfolioType> = (props) => {
+type portfolioPageType = {};
+
+export const Portfolio: React.FC<portfolioPageType> = (props) => {
    const {} = props;
 
    return (

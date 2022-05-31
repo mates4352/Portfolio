@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import s from './Card.module.scss';
 import {Popup} from "../popup/Popup";
-import {projectType} from "../../../bll/redux/reducers/portfolio-reducer";
+import {projectType} from "../../../pages/portfolio/Portfolio";
 
 type cardType = {
    project: projectType,

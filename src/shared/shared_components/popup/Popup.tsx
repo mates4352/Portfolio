@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Popup.module.scss';
-import {projectType} from "../../../bll/redux/reducers/portfolio-reducer";
+import {projectType} from "../../../pages/portfolio/Portfolio";
 
 type popupType = {
    project: projectType
@@ -38,11 +38,10 @@ export const Popup:React.FC<popupType> = (props) => {
                 </div>
              </dl>
 
-
-
              <a href={pageLink} target='_blank' rel='noreferrer'>
                 <img className={s.image} src={image} alt={alt}/>
              </a>
+
              <button className={s.button} type='button' onClick={closePopup}></button>
           </div>
        </section>
