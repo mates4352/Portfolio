@@ -4,6 +4,7 @@ type portfolioType = {
 
 export type projectType = {
    title: string,
+   type: string
    image: string
    alt: string
    pageLink: string

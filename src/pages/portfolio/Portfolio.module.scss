@@ -26,10 +26,12 @@
    grid-template-columns: repeat(3, 1fr);
    grid-auto-rows: 250px;
    gap: 30px;
+   padding: 0 20px;
    list-style: none;
 
    @include media(max, xl) {
       grid-template-columns: repeat(2, 1fr);
+      padding: unset;
    }
 
    @include media(max, lg) {

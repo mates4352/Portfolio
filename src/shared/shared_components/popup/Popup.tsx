@@ -9,14 +9,18 @@ type popupType = {
 
 export const Popup:React.FC<popupType> = (props) => {
    const {closePopup} = props;
-   const {title, image, alt, gitHubLink, pageLink, technologies} = props.project;
+   const {title, type, image, alt, gitHubLink, pageLink, technologies} = props.project;
 
    return (
        <section className={s.popup} >
           <div className={s.bg} onClick={closePopup}></div>
 
           <div className={s.body}>
-             <h2 className={s.title}>{title}</h2>
+             <hgroup className={s.wrap}>
+                <h2 className={s.title}>{title}</h2>
+                <h3 className={s.type}>{type}</h3>
+             </hgroup>
+
 
              <dl className={s.list}>
                 <div className={s.item}>
@@ -29,7 +33,7 @@ export const Popup:React.FC<popupType> = (props) => {
                 <div className={s.item}>
                    <dt className={s.key}>GitHub:</dt>
                    <dd className={s.caption}>
-                      <a className={s.caption} href={gitHubLink} target='_blank' rel='noreferrer'>Link</a>
+                      <a className={s.caption} href={gitHubLink} target='_blank' rel='noreferrer'>{gitHubLink ? 'Link' : 'Private Project'}</a>
                    </dd>
                 </div>
              </dl>

@@ -45,11 +45,22 @@
    }
 }
 
-.title {
+.wrap {
    margin-bottom: 25px;
+   text-align: center;
+}
+
+.title {
+   margin-bottom: 10px;
    font: var(--h2);
    font-size: 40px;
-   text-align: center;
+   text-transform: uppercase;
+   color: var(--color_secondary);
+   transition: color 500ms ease;
+}
+
+.type {
+   font: var(--h3);
    text-transform: uppercase;
    color: var(--color_secondary);
    transition: color 500ms ease;
