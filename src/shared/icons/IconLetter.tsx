@@ -10,7 +10,8 @@ export const IconLetter: React.FC<IconLetterType> = (props) => {
                width: 'var(--icon_width, 24px)',
                height: 'var(--icon_height, 24px)',
                fill: 'var(--icon_fill, rgb(255,255,255))',
-               display: 'flex'
+               display: 'flex',
+               transition: 'fill 500ms ease'
             }}
        >
           <path d="M48.045 56.583l-12.216-10.029-26.586 31.389h77.628l-26.589-31.701-12.237

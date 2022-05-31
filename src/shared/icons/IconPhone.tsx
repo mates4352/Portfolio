@@ -10,7 +10,8 @@ export const IconPhone: React.FC<IconPortfolioType> = (props) => {
                width: 'var(--icon_width, 24px)',
                height: 'var(--icon_height, 24px)',
                fill: 'var(--icon_fill, rgb(255,255,255))',
-               display: 'flex'
+               display: 'flex',
+               transition: 'fill 500ms ease'
             }}
        >
           <path d="M414.41,24.123C398.333,8.042,378.963,0,356.315,0H82.228C59.58,0,40.21,8.042,24.126,24.123

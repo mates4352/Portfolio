@@ -10,7 +10,8 @@ export const IconPerson: React.FC<IconPersonType> = (props) => {
                width: 'var(--icon_width, 24px)',
                height: 'var(--icon_height, 24px)',
                fill: 'var(--icon_fill, rgb(255,255,255))',
-               display: 'flex'
+               display: 'flex',
+               transition: 'fill 500ms ease'
             }}>
           <rect/>
           <path d="M12,11A4,4,0,1,0,8,7,4,4,0,0,0,12,11Z"/>

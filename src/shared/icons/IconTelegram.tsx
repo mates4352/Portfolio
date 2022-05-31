@@ -10,7 +10,8 @@ export const IconTelegram: React.FC<IconTelegramType> = (props) => {
                width: 'var(--icon_width, 24px)',
                height: 'var(--icon_height, 24px)',
                fill: 'var(--icon_fill, rgb(255,255,255))',
-               display: 'flex'
+               display: 'flex',
+               transition: 'fill 500ms ease'
             }}
        >
           <path d="M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75

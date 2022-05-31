@@ -1,0 +1,78 @@
+@import './../../style';
+
+.contact {
+   height: 100vh;
+   padding-top: 80px;
+   padding-bottom: 80px;
+
+   overflow-y: scroll;
+   @extend .scrollbar;
+
+   @include media(max, xl) {
+      display: flex;
+      align-items: center;
+      padding-top: 100px;
+      padding-bottom: 50px;
+   }
+}
+
+.container {
+   position: relative;
+   z-index: 999;
+   @extend .container;
+}
+
+.text {
+   max-width: 500px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+
+   font: var(--p1);
+   color: var(--color);
+   text-align: center;
+
+   @include media(max, lg) {
+      margin-bottom: 30px;
+   }
+}
+
+.list {
+   display: grid;
+   grid-auto-columns: var(--minmax);
+   grid-auto-flow: column;
+   justify-content: center;
+   column-gap: 20px;
+
+   list-style: none;
+}
+
+.item {
+
+}
+
+.link {
+   --icon_fill: var(--color);
+   --icon_width: 34px;
+   --icon_height: 34px;
+   --size: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: var(--size);
+   height: var(--size);
+
+   border-radius: 50%;
+   background-color: var(--background_secondary);
+   transition: background-color 500ms ease;
+
+   &:hover {
+      --icon_fill: var(--background);
+      background-color: var(--background_secondary_two);
+   }
+
+   @include media(max, lg) {
+      --size: 50px;
+      --icon_width: 24px;
+      --icon_height: 24px;
+   }
+}

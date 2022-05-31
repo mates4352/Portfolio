@@ -142,7 +142,6 @@ export const Portfolio: React.FC<portfolioType> = (props) => {
           <div className={s.container}>
              <MainTitle mainTitle={'WORK'} title={'MY'} subTitle={'PORTFOLIO'}/>
 
-
              <ul className={s.list}>
                 {projects.map((project: projectType, index: number) =>
                     <li className={s.item} key={index}>

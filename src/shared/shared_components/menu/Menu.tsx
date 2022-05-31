@@ -29,7 +29,7 @@ export const Menu:React.FC<menuType> = (props) => {
                    </li>
 
                    <li onClick={closeMenu} className={s.item}>
-                      <Link href='Portfolio' icon={'LETTER'}>PORTFOLIO</Link>
+                      <Link href='Portfolio' icon={'PORTFOLIO'}>PORTFOLIO</Link>
                    </li>
 
                    <li onClick={closeMenu} className={s.item}>

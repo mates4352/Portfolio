@@ -6,6 +6,7 @@ import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import {Theme} from "./shared/interactive/theme/Theme";
 import {About} from "./pages/about/About";
 import {Portfolio} from "./pages/portfolio/Portfolio";
+import {Contact} from "./pages/contact/Contact";
 
 type appType = {}
 
@@ -23,6 +24,7 @@ export const App: React.FC<appType> = () => {
                 <Route path="Home" element={<Home/>}/>
                 <Route path="About" element={<About/>}/>
                 <Route path="Portfolio" element={<Portfolio/>}/>
+                <Route path="Contact" element={<Contact/>}/>
              </Routes>
              <Menu/>
           </BrowserRouter>

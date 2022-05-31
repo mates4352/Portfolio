@@ -4,7 +4,7 @@ import s from './weve.module.scss';
 
 type WeveFooterType = {
    id: string
-   isShowShip?:boolean
+   isShowShip?: boolean
 };
 
 export const WeveFooter: React.FC<WeveFooterType> = (props) => {
@@ -27,13 +27,12 @@ export const WeveFooter: React.FC<WeveFooterType> = (props) => {
          "></animate>
 
              { isShowShip &&
-                 <image href={image} x="50px" y="-20px">
-                <animateMotion>
-                <mpath xlinkHref={'#' + id} dur="2s" repeatCount="indefinite"></mpath>
-                </animateMotion>
+                <image href={image} x="50px" y="-20px">
+                  <animateMotion>
+                    <mpath xlinkHref={'#' + id} dur="2s" repeatCount="indefinite"></mpath>
+                  </animateMotion>
                 </image>
              }
-
           </svg>
        </div>
    );

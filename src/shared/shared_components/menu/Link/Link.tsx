@@ -5,6 +5,8 @@ import {IconHome} from "../../../icons/IconHome";
 import {IconPerson} from "../../../icons/IconPerson";
 import {IconMessage} from "../../../icons/IconMessage";
 import {IconLetter} from "../../../icons/IconLetter";
+import {IconArrow} from "../../../icons/IconArrow";
+import {IconPortfolio} from "../../../icons/IconPortfolio";
 
 type linkType = {
    children: string
@@ -23,7 +25,7 @@ export const Link:React.FC<linkType> = (props) => {
           <div className={s.icon}>
              {icon === 'HOME' && <IconHome/>}
              {icon === 'PERSON' && <IconPerson/>}
-             {icon === 'LETTER' && <IconLetter/>}
+             {icon === 'PORTFOLIO' && <IconPortfolio/>}
              {icon === 'MESSAGE' && <IconMessage/>}
           </div>
        </NavLink>

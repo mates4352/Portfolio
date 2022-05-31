@@ -10,7 +10,8 @@ export const IconHome: React.FC<arrowType> = (props) => {
                width: 'var(--icon_width, 24px)',
                height: 'var(--icon_height, 24px)',
                fill: 'var(--icon_fill, rgb(255,255,255))',
-               display: 'flex'
+               display: 'flex',
+               transition: 'fill 500ms ease'
             }}
        >
           <g>
