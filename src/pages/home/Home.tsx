@@ -25,10 +25,11 @@ export const Home:React.FC<homeType> = (props) => {
                 </h2>
 
                 <p className={s.text}>
-                   Good day! My name is Sergey for more than half a year, I have been
-                   creating websites of various levels of complexity,
-                   I began to study vertska in the summer of 2020, during which time
-                   I acquired enough knowledge to perform complex project.
+                   Good afternoon! For over a year now I
+                   creation of sites of various levels of complexity.
+                   Currently I work as a layout designer in a company
+                   Picasel Agensy, works as an Html/Css mentor in companies
+                   It-Incubator and Html Academy,
                 </p>
 
                 <Button to={'/About'}>More about me</Button>
