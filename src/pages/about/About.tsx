@@ -28,7 +28,7 @@ export const About:React.FC<aboutType> = (props) => {
              <Experience/>
           </div>
 
-          <WeveFooter id={'footer'}/>
+          <WeveFooter id={'footer'} isShowShip={true}/>
        </section>
    );
 };

@@ -4,10 +4,11 @@ import s from './weve.module.scss';
 
 type WeveFooterType = {
    id: string
+   isShowShip?:boolean
 };
 
 export const WeveFooter: React.FC<WeveFooterType> = (props) => {
-   const {id} = props;
+   const {id, isShowShip} = props;
 
    return (
        <div className={s.WeveFooter}>
@@ -25,11 +26,14 @@ export const WeveFooter: React.FC<WeveFooterType> = (props) => {
          M0,32L34.3,42.7C68.6,53,137,75,206,85.3C274.3,96,343,96,411,90.7C480,85,549,75,617,85.3C685.7,96,754,128,823,160C891.4,192,960,224,1029,224C1097.1,224,1166,192,1234,165.3C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z;
          "></animate>
 
-             <image href={image} x="50px" y="-20px">
+             { isShowShip &&
+                 <image href={image} x="50px" y="-20px">
                 <animateMotion>
-                   <mpath xlinkHref={'#' + id} dur="2s" repeatCount="indefinite"></mpath>
+                <mpath xlinkHref={'#' + id} dur="2s" repeatCount="indefinite"></mpath>
                 </animateMotion>
-             </image>
+                </image>
+             }
+
           </svg>
        </div>
    );

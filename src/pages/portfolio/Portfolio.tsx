@@ -17,6 +17,7 @@ import sait_9 from './../../assets/images/sait9.jpg';
 import sait_10 from './../../assets/images/sait10.jpg';
 import sait_11 from './../../assets/images/sait11.jpg';
 import sait_12 from './../../assets/images/sait12.jpg';
+import {WeveFooter} from "../../shared/interactive/animation/weveAnimation/WeveFooter";
 
 type portfolioType = {};
 const projects:Array<projectType> = [
@@ -150,6 +151,7 @@ export const Portfolio: React.FC<portfolioType> = (props) => {
                 )}
              </ul>
           </div>
+          <WeveFooter id={'footer'}/>
        </section>
    );
 };
