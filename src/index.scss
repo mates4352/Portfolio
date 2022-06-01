@@ -15,10 +15,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   overflow: hidden;
-
-  @include media(max, xl) {
-    overflow: visible;
-  }
 }
 
 .isShowPopup-enter {

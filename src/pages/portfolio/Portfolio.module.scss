@@ -5,7 +5,7 @@
    padding-top: 80px;
    padding-bottom: 80px;
 
-   overflow-y: scroll;
+   overflow-y: auto;
    @extend .scrollbar;
 
    @include media(max, lg) {
@@ -16,7 +16,6 @@
 
 .container {
    position: relative;
-   z-index: 999;
    @extend .container;
    transform: unset;
    animation: unset;

@@ -11,9 +11,9 @@
 }
 
 .home {
-   min-height: 100vh;
+   height: 100vh;
    display: flex;
-   align-items: center;
+   overflow-y: auto;
 
    @include media(max, xl) {
       --padding: 40px;
@@ -33,6 +33,7 @@
    grid-auto-flow: column;
    justify-content: center;
    column-gap: 5%;
+   margin: auto;
 
    @include media(max, xl) {
       grid-template-columns: 1fr;
