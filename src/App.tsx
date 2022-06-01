@@ -21,6 +21,7 @@ export const App: React.FC<appType> = () => {
           <BrowserRouter>
              <Routes>
                 <Route path={"/"} element={<Navigate replace to="/Home"/>}/>
+                <Route path={"/My_Portfolio"} element={<Navigate replace to="/Home"/>}/>
                 <Route path="Home" element={<Home/>}/>
                 <Route path="About" element={<About/>}/>
                 <Route path="Portfolio" element={<Portfolio/>}/>
