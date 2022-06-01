@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import s from './Card.module.scss';
 import {Popup} from "../popup/Popup";
 import {projectType} from "../../../pages/portfolio/Portfolio";
+import {CSSTransition} from "react-transition-group";
 
 type cardType = {
    project: projectType,
@@ -21,7 +22,13 @@ export const Card:React.FC<cardType> = (props) => {
              <img className={s.image} src={image} alt={alt}/>
           </article>
 
-          {isShowPopup && <Popup project={props.project} closePopup={closePopup}/>}
+          <CSSTransition
+              in={isShowPopup} timeout={500}
+              classNames='isShowPopup'
+              mountOnEnter
+              unmountOnExit>
+             <Popup project={props.project} closePopup={closePopup}/>
+          </CSSTransition>
        </>
    );
 };

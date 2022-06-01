@@ -12,7 +12,7 @@ export const Popup:React.FC<popupType> = (props) => {
    const {title, type, image, alt, gitHubLink, pageLink, technologies} = props.project;
 
    return (
-       <section className={s.popup} >
+       <article className={s.popup} >
           <div className={s.bg} onClick={closePopup}></div>
 
           <div className={s.body}>
@@ -20,7 +20,6 @@ export const Popup:React.FC<popupType> = (props) => {
                 <h2 className={s.title}>{title}</h2>
                 <h3 className={s.type}>{type}</h3>
              </hgroup>
-
 
              <dl className={s.list}>
                 <div className={s.item}>
@@ -44,6 +43,6 @@ export const Popup:React.FC<popupType> = (props) => {
 
              <button className={s.button} type='button' onClick={closePopup}></button>
           </div>
-       </section>
+       </article>
    );
 };

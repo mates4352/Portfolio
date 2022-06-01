@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './Home.module.scss';
 import {Button} from "../../shared/interactive/button/Button";
 import {BlockAnimation} from "../../shared/interactive/blockAnimation/BlockAnimation";

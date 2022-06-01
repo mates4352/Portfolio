@@ -5,7 +5,6 @@
    top: 0;
    left: 0;
    z-index: 9999;
-   transform: translateX(-100%);
 
    display: none;
    visibility: hidden;
@@ -19,10 +18,6 @@
       display: block;
       visibility: visible;
    }
-}
-
-.header_active {
-   transform: translateX(0);
 }
 
 .menu {
