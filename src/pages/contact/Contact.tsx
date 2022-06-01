@@ -22,7 +22,7 @@ export const Contact:React.FC<contactType> = (props) => {
           <WeveHeader id={'header'}/>
 
           <div className={s.container}>
-             <MainTitle mainTitle={'WORK'} title={'MY'} subTitle={'PORTFOLIO'}/>
+             <MainTitle mainTitle={'CONTACT'} title={'GET IN'} subTitle={'TOUCH'}/>
 
              <p className={s.text}>
                 Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
