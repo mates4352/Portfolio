@@ -59,7 +59,7 @@ export const Info:React.FC<infoType> = (props) => {
                 </div>
              </dl>
 
-             <Button href={'https://drive.google.com/file/d/1vl6XfSfVgsTAoE7IB5m_-ilq6OsrX56V/view?usp=sharing'}>DOWNLOAD CV</Button>
+             <Button href={'https://drive.google.com/file/d/1FiNNqfRdjDuI7_MeYbc2F_YqzWzovkYa/view?usp=sharing'}>DOWNLOAD CV</Button>
           </div>
 
 
