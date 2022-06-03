@@ -34,15 +34,6 @@ export type projectType = {
 
 const projects:Array<projectType> = [
    {
-      title: 'Biobank',
-      type: 'Work project',
-      image: sait_11,
-      alt: 'Biobank',
-      pageLink: 'http://51.250.18.115/auth',
-      gitHubLink: '',
-      technologies: ['Html5, ', 'Css3, ', 'Scss, ', 'Angular ']
-   },
-   {
       title: 'Eukanuba DRY',
       type: 'Work project',
       image: sait_10,
