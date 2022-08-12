@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/My_Portfolio/static/css/main.6206a8e1.css",
+    "main.js": "/My_Portfolio/static/js/main.dad8fff4.js",
+    "static/js/787.28cb0dcd.chunk.js": "/My_Portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/sait6.jpg": "/My_Portfolio/static/media/sait6.6eede80c11f2665ade66.jpg",
+    "static/media/person.jpeg": "/My_Portfolio/static/media/person.ad9ab30b5890322569ea.jpeg",
+    "static/media/sait8.jpg": "/My_Portfolio/static/media/sait8.bd9ef36e8ab5d2d1c6ac.jpg",
+    "static/media/sait2.jpg": "/My_Portfolio/static/media/sait2.cafed01a0688ad771474.jpg",
+    "static/media/sait9.jpg": "/My_Portfolio/static/media/sait9.146e4a6b63b13277e210.jpg",
+    "static/media/sait7.jpg": "/My_Portfolio/static/media/sait7.2c35574e1a5819d40788.jpg",
+    "static/media/sait5.jpg": "/My_Portfolio/static/media/sait5.2e906a84f6ff43ba1705.jpg",
+    "static/media/sait10.jpg": "/My_Portfolio/static/media/sait10.9203a32f0aa65b7b0055.jpg",
+    "static/media/sait4.jpg": "/My_Portfolio/static/media/sait4.f55948cee8ebcc19370f.jpg",
+    "static/media/Poppins-Regular.woff": "/My_Portfolio/static/media/Poppins-Regular.ba2b048bed146a337122.woff",
+    "static/media/Poppins-Medium.woff": "/My_Portfolio/static/media/Poppins-Medium.ea2359ae070945d528e1.woff",
+    "static/media/Poppins-Bold.woff": "/My_Portfolio/static/media/Poppins-Bold.dc8c8aebc573dd97cc90.woff",
+    "static/media/Poppins-Black.woff": "/My_Portfolio/static/media/Poppins-Black.d6462a18ce1902a99867.woff",
+    "static/media/sait1.jpg": "/My_Portfolio/static/media/sait1.a04a23f1335b53fbc685.jpg",
+    "static/media/sait3.jpg": "/My_Portfolio/static/media/sait3.bf635498852cce30a3cd.jpg",
+    "static/media/sait12.jpg": "/My_Portfolio/static/media/sait12.fb4a12b79d9336257b8b.jpg",
+    "static/media/Poppins-Regular.woff2": "/My_Portfolio/static/media/Poppins-Regular.6e382ea6079e4378b131.woff2",
+    "static/media/Poppins-Bold.woff2": "/My_Portfolio/static/media/Poppins-Bold.754780821eb277d20b29.woff2",
+    "static/media/Poppins-Medium.woff2": "/My_Portfolio/static/media/Poppins-Medium.f26feff3bf4431a56197.woff2",
+    "static/media/Poppins-Black.woff2": "/My_Portfolio/static/media/Poppins-Black.1c246de46170f09e8bb3.woff2",
+    "static/media/planet_3.svg": "/My_Portfolio/static/media/planet_3.93a143a659a23603be7ba0b6b8c32839.svg",
+    "static/media/planet_2.svg": "/My_Portfolio/static/media/planet_2.69d27854b640f60dc87c24092522e216.svg",
+    "static/media/planet_5.svg": "/My_Portfolio/static/media/planet_5.c259c7eed7c9ced7d5ebe14b407efa1a.svg",
+    "static/media/planet.svg": "/My_Portfolio/static/media/planet.1bccb978224e3730c6ba5d33dbb5ffaf.svg",
+    "static/media/planet_4.svg": "/My_Portfolio/static/media/planet_4.926849038d4754dda3f46ee48f8683fa.svg",
+    "static/media/sun.svg": "/My_Portfolio/static/media/sun.489bfd3c78730d61cf4f2dcc53d8bac6.svg",
+    "static/media/ship.svg": "/My_Portfolio/static/media/ship.dd2576328bd7a5b3531500c5e5041a8d.svg",
+    "static/media/moon.svg": "/My_Portfolio/static/media/moon.4e6611fdf8cecb7f1542846647c52f25.svg",
+    "index.html": "/My_Portfolio/index.html",
+    "main.6206a8e1.css.map": "/My_Portfolio/static/css/main.6206a8e1.css.map",
+    "main.dad8fff4.js.map": "/My_Portfolio/static/js/main.dad8fff4.js.map",
+    "787.28cb0dcd.chunk.js.map": "/My_Portfolio/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6206a8e1.css",
+    "static/js/main.dad8fff4.js"
+  ]
+}
